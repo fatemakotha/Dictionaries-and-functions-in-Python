@@ -4,14 +4,9 @@ keys = ['Ten', 'Twenty', 'Thirty'] #....list1
 values = [10, 20, 30] #....list2
 
 #Function to merge two LISTS to form a DICTIONARY:
+def merge(list1, list2):
+    dictionary = dict(zip(keys, values))
+    print(dictionary)
 
-def make_list(list1, list2):
-    dic = {}
-    dic[keys[0]] = values[0]
-    dic[keys[1]] = values[1]
-    dic[keys[2]] = values[2]
-    print(dic)
-
-make_list(keys, values) #list1 = keys and list2 = values
-#prints: 
-# {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+merge(keys, values) 
+#prints: {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
